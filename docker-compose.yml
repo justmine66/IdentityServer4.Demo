@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  identityserver4.mvcclient:
+    image: identityserver4.mvcclient
+    build:
+      context: ./IdentityServer4.MvcClient
+      dockerfile: Dockerfile
