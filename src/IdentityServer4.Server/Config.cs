@@ -1,9 +1,10 @@
-﻿using System;
+﻿using IdentityServer4.Models;
+using IdentityServer4.Test;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using IdentityServer4.Server;
 using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace IdentityServer4.Server
 {
@@ -63,7 +64,7 @@ namespace IdentityServer4.Server
                 new TestUser
                 {
                     SubjectId = "2",
-                    Username = "lijun",
+                    Username = "linezero",
                     Password = "123456",
 
                     Claims = new List<Claim>
