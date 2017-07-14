@@ -57,6 +57,15 @@ namespace IdentityServer4.MvcServer
 
             app.UseIdentityServer();
 
+            app.UseMicrosoftAccountAuthentication(new MicrosoftAccountOptions() {
+                AuthenticationScheme = "Microsoft",
+                DisplayName = "Microsoft",
+                SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme,
+
+                ClientId = "434483408261-55tc8n0cs4ff1fe21ea8df2o443v2iuc.apps.micrleusercontent.com",
+                ClientSecret = "3gcoTrEDPPJ0ukn_aYYT6PWo"
+            });
+
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
