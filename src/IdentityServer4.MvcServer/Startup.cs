@@ -7,9 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using System.IdentityModel.Tokens.Jwt;
+using IdentityServer4.Quickstart.UI;
+using IdentityServer4.MvcServer.Quickstart;
 
-namespace IdentityServer4.MvcClient
+namespace IdentityServer4.MvcServer
 {
     public class Startup
     {
@@ -30,6 +31,12 @@ namespace IdentityServer4.MvcClient
         {
             // Add framework services.
             services.AddMvc();
+            services.AddIdentityServer()
+                .AddTemporarySigningCredential()
+                .AddInMemoryIdentityResources(Config.GetIdentityResources())
+                .AddInMemoryApiResources(Config.GetApiResources())
+                .AddInMemoryClients(Config.GetClients())
+                .AddTestUsers(TestUsers.Users);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,24 +55,7 @@ namespace IdentityServer4.MvcClient
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseCookieAuthentication(new CookieAuthenticationOptions
-            {
-                AuthenticationScheme = "Cookies"
-            });
-
-            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
-
-            app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions
-            {
-                AuthenticationScheme = "oidc",
-                SignInScheme = "Cookies",
-
-                Authority = "http://localhost:5000",
-                RequireHttpsMetadata = false,
-
-                ClientId = "mvc",
-                SaveTokens = true
-            });
+            app.UseIdentityServer();
 
             app.UseStaticFiles();
 

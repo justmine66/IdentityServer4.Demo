@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{978FB835-CFBE-45D8-9696-D5799BAA95FE}"
 EndProject
@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer.API", "src\I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4.Client", "src\IdentityServer4.Client\IdentityServer4.Client.csproj", "{6B3574CB-CDEB-4D15-86E4-000B9490E2DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer4.MvcClient", "src\IdentityServer4.MvcClient\IdentityServer4.MvcClient.csproj", "{0EAA4284-326C-4ED4-99F4-AF778FB9129A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer4.MvcServer", "src\IdentityServer4.MvcServer\IdentityServer4.MvcServer.csproj", "{5C354628-1B27-4701-BDF4-40AFC23255BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer4.MvcClient", "src\IdentityServer4.MvcClient\IdentityServer4.MvcClient.csproj", "{31D3C03C-4CA8-4C54-947C-616DDB1CD4FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +33,14 @@ Global
 		{6B3574CB-CDEB-4D15-86E4-000B9490E2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B3574CB-CDEB-4D15-86E4-000B9490E2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B3574CB-CDEB-4D15-86E4-000B9490E2DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0EAA4284-326C-4ED4-99F4-AF778FB9129A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EAA4284-326C-4ED4-99F4-AF778FB9129A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EAA4284-326C-4ED4-99F4-AF778FB9129A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EAA4284-326C-4ED4-99F4-AF778FB9129A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C354628-1B27-4701-BDF4-40AFC23255BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C354628-1B27-4701-BDF4-40AFC23255BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C354628-1B27-4701-BDF4-40AFC23255BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C354628-1B27-4701-BDF4-40AFC23255BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31D3C03C-4CA8-4C54-947C-616DDB1CD4FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D3C03C-4CA8-4C54-947C-616DDB1CD4FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D3C03C-4CA8-4C54-947C-616DDB1CD4FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D3C03C-4CA8-4C54-947C-616DDB1CD4FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{44F1A736-476B-4385-9DB3-E5F692FD25D4} = {978FB835-CFBE-45D8-9696-D5799BAA95FE}
 		{B16B440C-55F5-4F95-9DDF-94CFEEE597DA} = {978FB835-CFBE-45D8-9696-D5799BAA95FE}
 		{6B3574CB-CDEB-4D15-86E4-000B9490E2DC} = {978FB835-CFBE-45D8-9696-D5799BAA95FE}
-		{0EAA4284-326C-4ED4-99F4-AF778FB9129A} = {978FB835-CFBE-45D8-9696-D5799BAA95FE}
+		{5C354628-1B27-4701-BDF4-40AFC23255BD} = {978FB835-CFBE-45D8-9696-D5799BAA95FE}
+		{31D3C03C-4CA8-4C54-947C-616DDB1CD4FA} = {978FB835-CFBE-45D8-9696-D5799BAA95FE}
 	EndGlobalSection
 EndGlobal

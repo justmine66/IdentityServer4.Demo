@@ -13,15 +13,15 @@ namespace IdentityServer4.Quickstart.UI
     {
         public static List<TestUser> Users = new List<TestUser>
         {
-            new TestUser{SubjectId = "818727", Username = "alice", Password = "alice", 
+            new TestUser{SubjectId = "818727", Username = "justmine", Password = "justmine", 
                 Claims = 
                 {
-                    new Claim(JwtClaimTypes.Name, "Alice Smith"),
-                    new Claim(JwtClaimTypes.GivenName, "Alice"),
+                    new Claim(JwtClaimTypes.Name, "justmine Smith"),
+                    new Claim(JwtClaimTypes.GivenName, "justmine"),
                     new Claim(JwtClaimTypes.FamilyName, "Smith"),
-                    new Claim(JwtClaimTypes.Email, "AliceSmith@email.com"),
+                    new Claim(JwtClaimTypes.Email, "justmineSmith@email.com"),
                     new Claim(JwtClaimTypes.EmailVerified, "true", ClaimValueTypes.Boolean),
-                    new Claim(JwtClaimTypes.WebSite, "http://alice.com"),
+                    new Claim(JwtClaimTypes.WebSite, "http://justmine.com"),
                     new Claim(JwtClaimTypes.Address, @"{ 'street_address': 'One Hacker Way', 'locality': 'Heidelberg', 'postal_code': 69118, 'country': 'Germany' }", IdentityServer4.IdentityServerConstants.ClaimValueTypes.Json)
                 }
             },
